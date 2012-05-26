@@ -27,6 +27,7 @@ namespace :db do
 
         Rake::Task["db:create"].invoke
         Rake::Task["db:test:load_schema"].invoke
+        Rake::Task["db:seed"].invoke
       end
     end
 
